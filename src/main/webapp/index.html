@@ -1,0 +1,55 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <a href="/hello">第一个SpringMVC!</a><br/>
+<a href="/city/bj">北京</a>
+<a href="/city/sh">上海</a>
+<a href="/param/go/wanyu/100">ANT参数请求</a>
+<a href="/param/go1/2000-4000">正则请求</a>
+<h1>Form表单传值</h1>
+<form id="form1" method="post" action="/my/go">
+    用户名：<input type="text" name="username">
+    密码：<input type="text" name="pwd">
+    <input type="submit" value="提交">
+</form>
+<br/>
+    <a href="/my/go1?username=xixiix">通过Param传值</a>
+<br/>
+    <a href="/my/go2?user=lbj">通过Param传值 有键</a>
+<br/>
+    <a href="/my/go3?name=kb&name=curry">通过Param传多参数</a>
+<br/>
+    <a href="/my/go4?name=kb&name=curry">通过Param传多参数 list</a>
+<br/>
+    <a href="/my/go5">手动 通过CookieValue进行设置</a>
+<br/>
+<a href="/my/go6">自动 CookieValue </a>
+<br/>
+<a href="/my/go7">通过session取值</a>
+<br/>
+<h1>通过ModelAttribute 前向后传值</h1>
+<form method="post" action="/model/go">
+    姓名：<input type="text" name="username">
+    <br/>
+    密码：<input type="text" name="pwd">
+    <br/>
+    <input type="submit" value="提交">
+</form>
+    <br/>
+    <h1>通过ModelAttribute 后向前传值</h1>
+    <form method="post" action="/model/go1">
+        姓名：<input type="text" name="username">
+        <br/>
+        密码：<input type="text" name="pwd">
+        <br/>
+        <input type="submit" value="提交">
+    </form>
+<br/>
+<a href="/model/go2">后-前传 List</a><br/>
+<a href="/model/go3">后-前传 List 多参数</a><br/>
+<a href="/model/go4">后-前传 Map</a><br/>
+<a href="/vc/show">校验</a><br/>
+</body>
+</html>
